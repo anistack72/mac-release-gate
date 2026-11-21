@@ -1,0 +1,33 @@
+{
+  "name": "@anistack72/mac-release-gate",
+  "version": "0.1.0",
+  "description": "Read-only macOS release checks: signatures, Gatekeeper, notarization and SHA-256.",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "mac-release-gate": "./cli.mjs"
+  },
+  "exports": "./index.mjs",
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check cli.mjs && node --check index.mjs",
+    "demo": "node demo.mjs"
+  },
+  "files": [
+    "cli.mjs",
+    "index.mjs",
+    "support.mjs",
+    "README.md",
+    "LICENSE",
+    "header.png",
+    "demo.mjs"
+  ],
+  "license": "MIT",
+  "author": "Anis Mosbah",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anistack72/mac-release-gate.git"
+  }
+}
